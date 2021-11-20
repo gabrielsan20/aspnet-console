@@ -11,6 +11,7 @@ for (int x = 0; x <= 12; x++)
     String input = Console.ReadLine();
     int number = Int32.Parse(input);
 
+    if (number < 1 | number > 20) continue;
     if (number <= 10 && number % 2 == 0)
     {
         firstGroup.Add(number);
